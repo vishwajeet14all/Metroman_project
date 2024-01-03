@@ -1,28 +1,29 @@
-/* Top Navbar */
-.wrapper {
+/* Logo Navbar Top */
+.logowrapper {
+    padding: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-/* Logo */
-.logowrapper {
-    padding: 25px;   
-}
+
 .logo {
     width: 129px;
 }
+
 /*Top Nav List */
-.navList div ul {
+.navList {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
 }
-.navList div ul li {
+
+.navList li {
     border-right: 1px solid #d6d6d6;
     padding: 5px 15px;
 }
+
 .contactNumber {
     text-decoration: none;
     color: #4f4f00;
@@ -30,18 +31,21 @@
     font-weight: 700;
     margin: 5px 10px;
     display: inline-block;
-    vertical-align: middle;    
+    vertical-align: middle;
 }
+
 .watsAppImg {
-    color: #10815d;    
+    color: #10815d;
     text-align: center;
     font-size: 18px;
 }
+
 .emailIcon {
     color: #10815d;
     vertical-align: middle;
     font-size: 18px;
 }
+
 .email {
     text-decoration: none;
     color: #4f4f00;

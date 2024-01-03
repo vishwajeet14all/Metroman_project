@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Card() {
   return (
-    <section>
+    <section className={style.sectionWrapper}>
       <div className={`container ${style.container}`}>
         <div className={`card ${style.cardSingle}`} style={{ width: "18rem" }}>
           <img
