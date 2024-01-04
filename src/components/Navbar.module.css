@@ -10,6 +10,13 @@
     width: 129px;
 }
 
+@media (max-width:500px) {
+    .smallScreen {
+        display: none;
+    }
+
+}
+
 /*Top Nav List */
 .navList {
     display: flex;
@@ -17,6 +24,14 @@
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+}
+
+.navLinks {
+    color: #fff !important;
+}
+
+.navLinks:hover{    
+    background-color: #1974fc;
 }
 
 .navList li {
@@ -30,7 +45,6 @@
     font-size: 18px;
     font-weight: 700;
     margin: 5px 10px;
-    display: inline-block;
     vertical-align: middle;
 }
 

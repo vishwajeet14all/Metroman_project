@@ -16,8 +16,8 @@ export default function Card() {
             <h5 className="card-title">CONSTRUCTION STAGES</h5>
             <p className="card-text">
               Essential steps of home-building you need to know
-            </p>
-            <Link href="#" className={`btn btn-secondary ${style.cardButton}`}>
+            </p>     
+            <Link to="/stages" className={`btn btn-secondary ${style.cardButton}`}>
               VIEW STAGES
             </Link>
           </div>
@@ -33,7 +33,7 @@ export default function Card() {
             <p className="card-text">
               How ‘NOT’ to exceed the budget while building your home
             </p>
-            <Link href="#" className={`btn btn-secondary ${style.cardButton}`}>
+            <Link to="/calculator" className={`btn btn-secondary ${style.cardButton}`}>
               VIEW MORE
             </Link>
           </div>

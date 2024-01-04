@@ -11,10 +11,13 @@ export default function Navbar() {
     <>
       <div className="container">
         <div className="row">
-            <div className={style.logowrapper}>
+          <div className={style.logowrapper}>
+            <div>
               <Link to="/">
                 <img className={style.logo} src={logo} alt="" />
               </Link>
+            </div>
+            <div className={style.smallScreen}>
               <ul className={style.navList}>
                 <li>
                   <Link
@@ -24,7 +27,7 @@ export default function Navbar() {
                     <img
                       src="	https://nuvonirmaan.com/wp-content/themes/nuvoco/assets/images/whatsapp.png"
                       alt=""
-                      className={style.watsAppImg}
+                      className={`img-fluid  ${style.watsAppImg}`}
                     />
                     <span> +91 8218327600</span>
                   </Link>
@@ -42,12 +45,13 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+      </div>
       <div>
         <nav className="navbar navbar-expand-lg bg-primary">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">
+            {/* <Link className="navbar-brand" to="/">
               MetroMan
-            </Link>
+            </Link> */}
             <button
               className="navbar-toggler"
               type="button"
@@ -63,19 +67,30 @@ export default function Navbar() {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className={`navbar-nav me-auto mb-2 mb-lg-0`}>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/aboutus">
+                  <Link className={`nav-link ${style.navLinks}`} aria-current="page" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className={`nav-link ${style.navLinks}`} to="/stages">
+                    Construction Stages
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className={`nav-link ${style.navLinks}`} to="/aboutus">
                     About Us
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    aria-current="page"
-                    to="/calculator"
-                  >
+                  <Link className={`nav-link ${style.navLinks}`} to="/calculator">
                     Calculator
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className={`nav-link ${style.navLinks}`} to="/products">
+                    Products
                   </Link>
                 </li>
               </ul>

@@ -463,7 +463,7 @@ export default function Home() {
                   <div className="text-center col-lg-12">
                     <form ref={form} onSubmit={sendEmail}>
                       <div className="row justify-content-md-center">
-                        <div className="p-2 col-lg-5">
+                        <div className="p-3 col-lg-5">
                           <div className="form-floating">
                             <input
                               id={style.inputContact}
@@ -476,7 +476,7 @@ export default function Home() {
                             <label for="inputContact">Name:</label>
                           </div>
                         </div>
-                        <div className="p-2 col-lg-5">
+                        <div className="p-3 col-lg-5">
                           <div className="form-floating">
                             <input
                               id={style.inputContact}
@@ -489,7 +489,7 @@ export default function Home() {
                             <label for="inputContact">Email:</label>
                           </div>
                         </div>
-                        <div className="p-2 col-lg-5">
+                        <div className="p-3 col-lg-5">
                           <div className="form-floating">
                             <input
                               id={style.inputContact}
@@ -502,7 +502,7 @@ export default function Home() {
                             <label for="inputContact">Mobile No.:</label>
                           </div>
                         </div>
-                        <div className="p-2 col-lg-5">
+                        <div className="p-3 col-lg-5">
                           <div className="form-floating">
                             <textarea
                               name="message"
