@@ -69,7 +69,11 @@ export default function Navbar() {
             >
               <ul className={`navbar-nav me-auto mb-2 mb-lg-0`}>
                 <li className="nav-item">
-                  <Link className={`nav-link ${style.navLinks}`} aria-current="page" to="/">
+                  <Link
+                    className={`nav-link ${style.navLinks}`}
+                    aria-current="page"
+                    to="/"
+                  >
                     Home
                   </Link>
                 </li>
@@ -84,13 +88,26 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className={`nav-link ${style.navLinks}`} to="/calculator">
+                  <Link
+                    className={`nav-link ${style.navLinks}`}
+                    to="/calculator"
+                  >
                     Calculator
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className={`nav-link ${style.navLinks}`} to="/products">
                     Products
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className={`nav-link ${style.navLinks}`} to="/login">
+                    Login
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className={`nav-link ${style.navLinks}`} to="/signup">
+                    Signup
                   </Link>
                 </li>
               </ul>

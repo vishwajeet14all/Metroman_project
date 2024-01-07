@@ -4,6 +4,7 @@ import style from "./Home.module.css";
 import Card from "../components/Card";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const form = useRef();
@@ -527,19 +528,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer>
-        <div className="container">
-          <div className="pt-3 pb-3 row">
-            <span className={style.footer}>
-              © 2020 - 2024,Nuvoco Vistas Corp. Ltd. All Rights Reserved I
-              Privacy Policy I Disclaimer I metroman.com
-            </span>
-          </div>
-        </div>
-        <div className={style.watsapp}>
-          <img width="50px" src={Watsappimage} alt="" />
-        </div>
-      </footer>
+      <Footer/>
+      <div className={style.watsapp}>
+        <img width="50px" src={Watsappimage} alt="" />
+      </div>
     </div>
   );
 }

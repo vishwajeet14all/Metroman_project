@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Stages from "./pages/Stages";
 import Calculator from "./pages/Calculator";
 import Products from "./pages/Products";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 
 function App() {
@@ -18,9 +20,12 @@ function App() {
         { path: "/aboutus", element: <AboutUs /> },
         { path: "/stages", element: <Stages /> },
         { path: "/calculator", element: <Calculator /> },
-        { path: "/products", element: <Products /> },
+        { path: "/products", element: <Products /> },        
+        { path: "/login", element: <Login /> },
+        { path: "/signup", element: <Signup /> },
       ],
     },
+    
   ]);
 
   return (
